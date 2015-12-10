@@ -1,0 +1,104 @@
+,Distribution,CDF
+1,Frechet,"$$\mbox{Life Model:  }
+     Frechet(t)=e^{-e^{-\frac{ \left(\ln \left( t \right) - 
+     location \right)}{scale}}}$$"
+2,Loglogistic,"$$\mbox{Loglogistic:}F(t)=\frac{
+             e^{
+                \frac{ln(t)-location}{scale}
+                }
+            }{
+               [
+                1+e^{
+                 \frac{ln(t)-location}{scale}
+                 }
+               ]
+              }\
+    =\frac{
+             1
+            }{
+               [
+                1+e^{
+                 -\frac{ln(t)-location}{scale}
+                 }
+               ]
+              } $$"
+3,Weibull,$$\mbox{Weibull:}F(t) =1- e^{-(\frac{t}{\alpha})^{\beta}}$$
+4,LEV,$$\mbox{LEV:}F(t)=e^{-e^{-\frac{t-location}{scale}}} $$
+5,Normal,"$$\mbox{Normal:  }F(t)=\Phi \left( \frac{t - location}{scale} \right)\
+    =\int_{-\infty}^{\frac{t - location}{scale}} \frac{1}{\sqrt{2 \, \pi}} e^{-\frac{1}{2} z^2} \, dz
+    $$"
+6,Logistic,"$$\mbox{Logistic:}F(t)=\frac{
+            e^{
+                 \frac{t-location}{scale}
+               }
+            }
+            { 
+              1+e^{
+                   \frac{t-location}{scale}
+                   }
+            }\
+      = \frac{
+              1
+             }
+             { 
+              1+e^{
+                   -\frac{t-location}{scale}
+                   }
+             }$$"
+7,SEV,$$\mbox{SEV:}F(t)=1-e^{-e^{\frac{t-location}{scale}}} $$
+8,Log Generalized Gamma,Log Generalized Gamma
+9,Threshold Lognormal,$$\mbox{Threshold Lognormal:}F(t)= \Phi(\frac{ln(t-Threshold)-location}{ scale})$$
+10,Threshold Frechet,$$\mbox{Threshold Frechet:}F(t)= e^{-e^{-\frac{ \left(\ln \left( t -Threshold\right) -location \right)}{scale}}} $$
+11,Generalized Gamma,Generalized Gamma
+12,DS Frechet,$$\mbox{DS Frechet:}F(t)= p\cdot e^{-e^{-\frac{ \left(\ln \left( t \right) -location \right)}{scale}}} $$
+13,DS Lognormal,"$$\mbox{DS Lognormal:}F(t)= \frac{p}{\pi}  \int_{
+                              0
+                             }^{
+                                  \frac{\pi}{2}
+                                }
+    {e^{
+          \frac{
+                     -\frac{ln(t)-location}{\sqrt{2}\cdot scale}
+                  }{\sin^{2}\theta}
+        }d\theta}$$"
+14,DS Loglogistic,"$$\mbox{DS Loglogistic:}F(t)= \frac{
+             pe^{
+                \frac{ln(t)-location}{scale}
+                }
+            }{
+               [
+                1+e^{
+                 \frac{ln(t)-location}{scale}
+                 }
+               ]
+              }$$"
+15,DS Weibull,$$\mbox{DS Weibull:}F(t) =p(1- e^{-(\frac{t}{\alpha})^{\beta}} )$$
+16,Exponential,"$$\mbox{Exponential:}F(t)=1-e^{
+          (-\frac{t-location}{scale}
+           )  
+         }$$"
+17,Threshold Weibull,$$\mbox{Threshold Weibull:}F(t)= 1- e^{-(\frac{t-Threshold}{scale})^{shape}}$$
+18,Threshold Loglogistic,"$$\mbox{Threshold Loglogistic:}F(t)= \frac{
+             e^{
+                \frac{ln(t-Threshold)-location}{scale}
+                }
+            }{
+               [
+                1+e^{
+                 \frac{ln(t-Threshold)-location}{scale}
+                 }
+               ]
+              }$$"
+19,Lognormal,"$$\mbox{Lognormal:}F(t)=\frac{ 1}{ 2}  erfc(
+                                  -\frac{ln(t)-location}{\sqrt{2}\cdot scale}
+  )\
+    =\frac{1}{\pi}  \int_{
+    0
+    }^{
+    \frac{\pi}{2}
+    }
+    {e^{
+    \frac{
+    -\frac{ln(t)-location}{\sqrt{2}\cdot scale}
+    }{\sin^{2}\theta}
+    }d\theta}$$"
